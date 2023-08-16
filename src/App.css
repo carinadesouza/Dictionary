@@ -1,38 +1,86 @@
 .App {
-  text-align: center;
+  
+  
+  margin: 0 auto;
+} 
+.App h2{
+ padding-left: 500px;
+ color: #ffffffdd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.dictionarys-list {
+  margin-bottom: 20px;
+} 
+.ant-modal .ant-modal-title {
+  color:#bc5cb8dd ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.total-field {
+  text-align: center;
+  margin-top: 20px;
+} 
+.button{
+  margin: 5px;
+  background-color: #bc5cb8dd;
+}  
+.ant-btn-primary{
+   
+  background-color:#bc5cb8dd; 
+   
+ }   
+ .ant-btn-primary.button:hover{
+  background-color:#4e0b4add; 
+ } 
+ .ant-btn-primary.button:active{
+  background-color:#4e0b4add; 
+ } 
+ .ant-btn{
+   
+  background-color:#bc5cb8dd; 
+  color:#ffffffdd; 
+  
+} 
+
+
+
+
+ 
+.header {
+  background-color: #bc5cb8dd;
+  
+  padding-left: 28px; 
+  padding-bottom: 15px; 
+  padding-top: 15px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+} 
+h3{
+  color: #bc5cb8dd
+}
+
+.header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+} 
+/* App.css (or your custom CSS file) */
+
+/* Custom styles for the button */
+.no-click-effect {
+  background-color: #bc5cb8dd; /* Change this to the desired background color */
+  border-color: #bc5cb8dd; /* Change this to the desired border color */
+  color:#ffffff; /* Change this to the desired text color */
+}
+
+/* Remove the click effect */
+.no-click-effect:hover,
+.no-click-effect:active{
+  background-color: #ffa1fadd; /* Ensure the background color remains the same */
+  border-color: #ffa1fadd; /* Ensure the border color remains the same */
+  color:#ffffffdd; /* Ensure the text color remains the same */
 }
