@@ -8,6 +8,7 @@
   padding-left: 0;
   color: #ffffffdd;
   text-align: center;
+  font-size: 1.5rem; /* Adjusted for responsiveness */
 }
 
 .input-container {
@@ -40,12 +41,18 @@
 .button {
   margin: 5px;
   background-color: #bc5cb8dd;
+  padding: 10px 20px; /* Added padding for better touch support */
+  border: none;
+  border-radius: 5px; /* Rounded corners for a modern look */
+  cursor: pointer;
 }
 
 .ant-btn-primary,
 .ant-btn {
   background-color: #bc5cb8dd;
   color: #ffffffdd;
+  border: none;
+  border-radius: 5px; /* Rounded corners for consistency */
 }
 
 .ant-btn-primary.button:hover,
@@ -61,6 +68,7 @@
 
 h3 {
   color: #bc5cb8dd;
+  font-size: 1.2rem; /* Adjusted for responsiveness */
 }
 
 .header h1 {
@@ -68,6 +76,7 @@ h3 {
   font-family: "McLaren", cursive;
   font-weight: 200;
   text-align: center;
+  font-size: 2.5rem; /* Adjusted for responsiveness */
 }
 
 .no-click-effect {
@@ -85,15 +94,34 @@ h3 {
 
 @media (max-width: 767px) {
   .App h2 {
-    font-size: 1.5em;
+    font-size: 1.2rem; /* Responsive font size for small screens */
   }
 
   .header h1 {
-    font-size: 1.8em;
+    font-size: 2rem; /* Responsive font size for small screens */
   }
 
   .button {
     width: 100%;
     margin: 5px 0;
+    padding: 10px; /* Ensure button text is readable on smaller screens */
+  }
+
+  .input-container {
+    flex-direction: column; /* Stack input fields on smaller screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .App {
+    padding: 0 30px; /* More padding for large screens */
+  }
+
+  .App h2 {
+    font-size: 2rem; /* Larger font size for larger screens */
+  }
+
+  .header h1 {
+    font-size: 3rem; /* Larger font size for larger screens */
   }
 }
