@@ -1,86 +1,99 @@
 .App {
-  
-  
   margin: 0 auto;
-} 
-.App h2{
- padding-left: 500px;
- color: #ffffffdd;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.App h2 {
+  padding-left: 0;
+  color: #ffffffdd;
+  text-align: center;
 }
 
 .input-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .input-container {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .dictionarys-list {
   margin-bottom: 20px;
-} 
+}
+
 .ant-modal .ant-modal-title {
-  color:#bc5cb8dd ;
+  color: #bc5cb8dd;
 }
 
 .total-field {
   text-align: center;
   margin-top: 20px;
-} 
-.button{
+}
+
+.button {
   margin: 5px;
   background-color: #bc5cb8dd;
-}  
-.ant-btn-primary{
-   
-  background-color:#bc5cb8dd; 
-   
- }   
- .ant-btn-primary.button:hover{
-  background-color:#4e0b4add; 
- } 
- .ant-btn-primary.button:active{
-  background-color:#4e0b4add; 
- } 
- .ant-btn{
-   
-  background-color:#bc5cb8dd; 
-  color:#ffffffdd; 
-  
-} 
+}
 
+.ant-btn-primary,
+.ant-btn {
+  background-color: #bc5cb8dd;
+  color: #ffffffdd;
+}
 
+.ant-btn-primary.button:hover,
+.ant-btn-primary.button:active {
+  background-color: #4e0b4add;
+}
 
-
- 
 .header {
   background-color: #bc5cb8dd;
-  
-  padding-left: 28px; 
-  padding-bottom: 15px; 
-  padding-top: 15px;
+  padding: 15px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-} 
-h3{
-  color: #bc5cb8dd
+}
+
+h3 {
+  color: #bc5cb8dd;
 }
 
 .header h1 {
   color: #fff;
   font-family: "McLaren", cursive;
   font-weight: 200;
-} 
-/* App.css (or your custom CSS file) */
-
-/* Custom styles for the button */
-.no-click-effect {
-  background-color: #bc5cb8dd; /* Change this to the desired background color */
-  border-color: #bc5cb8dd; /* Change this to the desired border color */
-  color:#ffffff; /* Change this to the desired text color */
+  text-align: center;
 }
 
-/* Remove the click effect */
+.no-click-effect {
+  background-color: #bc5cb8dd;
+  border-color: #bc5cb8dd;
+  color: #ffffff;
+}
+
 .no-click-effect:hover,
-.no-click-effect:active{
-  background-color: #ffa1fadd; /* Ensure the background color remains the same */
-  border-color: #ffa1fadd; /* Ensure the border color remains the same */
-  color:#ffffffdd; /* Ensure the text color remains the same */
+.no-click-effect:active {
+  background-color: #ffa1fadd;
+  border-color: #ffa1fadd;
+  color: #ffffffdd;
+}
+
+@media (max-width: 767px) {
+  .App h2 {
+    font-size: 1.5em;
+  }
+
+  .header h1 {
+    font-size: 1.8em;
+  }
+
+  .button {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
